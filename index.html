@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌀</text></svg>" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>happie-chaos | GenAI Mentor</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@500;700&family=Fira+Code&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+
+<body>
+  <div id="app">
+    <nav class="navbar glass-panel">
+      <div class="logo">🌀 <span class="text-gradient">happie-chaos</span></div>
+      <div class="nav-right">
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Lab</a></li>
+          <li><a href="nav/history/history.html">History</a></li>
+          <li><a href="nav/knowme/knowme.html">Know Me</a></li>
+          <li><a href="nav/learning/learning.html">Learning</a></li>
+          <li><a href="nav/avatar/avatar.html">Avatar</a></li>
+        </ul>
+        <div class="settings-container">
+          <button id="settingsBtn" class="icon-btn" title="AI Settings">⚙️</button>
+          <div id="settingsPanel" class="settings-panel hidden-panel">
+            <h4
+              style="font-size: 0.7rem; color: var(--text-secondary); margin-bottom: 0.5rem; text-transform: uppercase;">
+              Engine Config</h4>
+            <div class="toggle-group">
+              <span>Pro Mode</span>
+              <label class="switch"><input type="checkbox" id="levelToggle"><span class="slider"></span></label>
+            </div>
+            <div class="toggle-group">
+              <span>Interview</span>
+              <label class="switch"><input type="checkbox" id="interviewToggle"><span
+                  class="slider green"></span></label>
+            </div>
+            <div class="toggle-group">
+              <span>Chaos</span>
+              <label class="switch"><input type="checkbox" id="chaosToggle"><span class="slider pink"></span></label>
+            </div>
+            <hr style="border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 10px 0;">
+            <button id="clearHistory" class="danger-link">Reset Memory</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container">
+      <div id="homeView">
+        <header class="hero">
+          <div class="badge">Adaptive Learning Engine</div>
+          <h1>Unlock the Logic Behind<br><span class="text-gradient">Your Code & Ideas</span></h1>
+        </header>
+
+        <section class="input-card glass-panel">
+          <div class="input-wrapper">
+            <textarea id="userInput" placeholder="Paste your code here..." spellcheck="false"></textarea>
+            <div class="input-actions">
+              <div id="moodTag" class="mood-tag hidden">Detected Mood: Thinking</div>
+
+              <div class="quick-toggle-area">
+                <div class="quick-toggle">
+                  <label class="switch-sm">
+                    <input type="checkbox" id="rewriteToggle">
+                    <span class="slider-sm"></span>
+                  </label>
+                  <span class="toggle-label">Rewrite Code</span>
+                </div>
+                <button id="analyzeBtn" class="btn-primary">
+                  <span class="btn-text">Analyze Logic</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="outputArea" class="output-section hidden"></section>
+      </div>
+    </main>
+
+    <div class="background-blobs">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+    </div>
+  </div>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>

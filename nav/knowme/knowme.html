@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neural Sync | happie-chaos</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Outfit:wght@700&family=Fira+Code&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="./knowme.css">
+</head>
+
+<body>
+    <div id="app">
+        <nav class="navbar glass-panel">
+            <div class="logo">🌀 <span class="text-gradient">happie-chaos</span></div>
+            <div class="nav-right">
+                <ul class="nav-links">
+                    <li><a href="../../index.html">Lab</a></li>
+                    <li><a href="../../history.html">History</a></li>
+                    <li><a href="knowme.html" class="active">Know Me</a></li>
+                    <li><a href="../learning/learning.html">Learning</a></li>
+                    <li><a href="../avatar/avatar.html">Avatar</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <main class="container">
+            <div class="sync-grid">
+                <section class="glass-panel calibration-box">
+                    <div class="badge">Biometric Input</div>
+                    <h2>Neural <span class="text-gradient">Calibration</span></h2>
+
+                    <div class="input-group">
+                        <label>Identity</label>
+                        <input type="text" id="userName" placeholder="Enter your name...">
+                    </div>
+
+                    <div class="input-group">
+                        <label>Experience Tier</label>
+                        <select id="userLevel">
+                            <option value="beginner">Novice (Lvl 1)</option>
+                            <option value="intermediate">Scripter (Lvl 50)</option>
+                            <option value="pro">Architect (Lvl 99)</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Obsession (Interests)</label>
+                        <input type="text" id="userInterest" placeholder="e.g. Space, Cooking, Anime...">
+                    </div>
+
+                    <button id="syncBtn" class="btn-primary" style="width: 100%;">
+                        <span class="btn-text">Synchronize Persona</span>
+                    </button>
+                </section>
+
+                <section id="personaDisplay" class="glass-panel profile-box empty">
+                    <div id="personaPlaceholder">
+                        <div class="pulse-circle"></div>
+                        <p>Waiting for Calibration...</p>
+                    </div>
+                    <div id="personaContent" class="hidden">
+                        <div class="profile-header">
+                            <div id="avatarEmoji">🧬</div>
+                            <div>
+                                <h3 id="displayTitle">The Binary Chef</h3>
+                                <span id="displayRank">Architect Rank</span>
+                            </div>
+                        </div>
+                        <p id="vibeAnalysis">Synchronize to generate your AI-driven developer persona.</p>
+                        <div class="stats-row">
+                            <div class="stat"><span>Focus</span>
+                                <div class="bar">
+                                    <div id="focusBar" style="width: 0%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+    <script type="module" src="./knowme.js"></script>
+</body>
+
+</html>
