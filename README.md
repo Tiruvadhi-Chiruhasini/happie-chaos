@@ -13,7 +13,7 @@ This is *learning with vibes*.
 
 ---
 
-## 🌠 Core Philosophy — The Logic Lens
+## 🌠 Core Philosophy - The Logic Lens
 
 Most AI tools answer *what*.  
 **happie-chaos explains *why*.**
@@ -26,7 +26,7 @@ It starts feeling intentional.
 
 ---
 
-## 🎭 Dynamic Identity System — Persona Factory
+## 🎭 Dynamic Identity System - Persona Factory
 
 No static profiles. Only **Neural Identities**.
 
@@ -62,7 +62,7 @@ Just smooth cognitive continuity.
 
 ---
 
-## ✨ Holographic UI / UX — Built for Flow State
+## ✨ Holographic UI / UX - Built for Flow State
 
 Designed to feel like coding inside a sci-fi movie.
 
